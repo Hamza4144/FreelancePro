@@ -54,9 +54,9 @@ export default function Navigation() {
             </button>
             <button 
               onClick={() => scrollToSection('contact')} 
-              className="gradient-bg text-white px-6 py-2 rounded-full hover:shadow-xl transition-all transform hover:scale-105 font-bold magnetic-hover pulse-slow"
+              className="gradient-bg text-white px-6 py-2 rounded-full hover:shadow-xl transition-all transform hover:scale-105 font-bold"
             >
-              🚀 Get Started
+              Contact Us
             </button>
           </div>
           
@@ -106,7 +106,7 @@ export default function Navigation() {
               onClick={() => scrollToSection('contact')} 
               className="gradient-bg text-white px-6 py-3 rounded-full text-center w-full font-bold hover:shadow-lg transition-all transform hover:scale-105"
             >
-              🚀 Get Started
+              Contact Us
             </button>
           </div>
         </div>

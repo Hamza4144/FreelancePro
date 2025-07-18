@@ -12,52 +12,52 @@ export default function Services() {
   const services = [
     {
       icon: Rocket,
-      title: "High-Converting Websites",
-      description: "Websites that turn visitors into customers with proven conversion strategies.",
-      result: "3x More Sales",
-      price: "From $2,999",
-      features: ["Mobile-First Design", "Speed Optimized", "SEO Ready", "Conversion Focused"],
+      title: "Custom Websites",
+      description: "Professional websites built with modern technologies and best practices.",
+      result: "Professional Results",
+      price: "Starting at $2,500",
+      features: ["Mobile-Responsive", "Fast Loading", "SEO Optimized", "User-Friendly"],
       popular: true
     },
     {
       icon: "fab fa-wordpress",
-      title: "WordPress Powerhouse",
-      description: "Custom WordPress solutions that dominate search rankings and drive traffic.",
-      result: "Top Google Rankings",
-      price: "From $1,999",
-      features: ["Custom Themes", "Plugin Development", "E-commerce Ready", "Content Strategy"]
+      title: "WordPress Development",
+      description: "Custom WordPress solutions for businesses of all sizes.",
+      result: "Easy Management",
+      price: "Starting at $1,800",
+      features: ["Custom Themes", "Plugin Development", "Content Management", "SEO Ready"]
     },
     {
       icon: Target,
       title: "Web Applications",
-      description: "Custom web apps that automate your business and scale with your growth.",
-      result: "50% Time Saved",
-      price: "From $4,999",
-      features: ["React.js & Laravel", "Database Design", "API Integration", "Cloud Hosting"]
+      description: "Custom web applications to streamline your business processes.",
+      result: "Business Efficiency",
+      price: "Starting at $4,500",
+      features: ["React.js & Laravel", "Database Integration", "API Development", "Scalable Design"]
     },
     {
       icon: TrendingUp,
       title: "E-commerce Solutions",
-      description: "Online stores that sell 24/7 with automated marketing and payment systems.",
-      result: "24/7 Sales Machine",
-      price: "From $3,999",
-      features: ["Payment Gateway", "Inventory System", "Marketing Tools", "Analytics Dashboard"]
+      description: "Online stores with secure payment processing and inventory management.",
+      result: "Online Sales",
+      price: "Starting at $3,500",
+      features: ["Payment Integration", "Product Management", "Order Processing", "Mobile Commerce"]
     },
     {
       icon: Shield,
-      title: "API & Integrations",
-      description: "Connect your systems with powerful APIs for seamless business operations.",
-      result: "100% Automation",
-      price: "From $1,499",
-      features: ["Google APIs", "Twilio SMS", "Firebase", "Third-party Tools"]
+      title: "API Integration",
+      description: "Connect your website with third-party services and platforms.",
+      result: "Seamless Integration",
+      price: "Starting at $1,200",
+      features: ["Google Services", "Payment APIs", "Social Media", "Custom Solutions"]
     },
     {
       icon: Clock,
-      title: "Support & Maintenance",
-      description: "Keep your website running fast, secure, and updated 24/7.",
-      result: "99.9% Uptime",
-      price: "From $299/mo",
-      features: ["Security Updates", "Performance Monitoring", "Backup System", "Priority Support"]
+      title: "Maintenance & Support",
+      description: "Ongoing website maintenance and technical support services.",
+      result: "Peace of Mind",
+      price: "From $250/month",
+      features: ["Regular Updates", "Security Monitoring", "Backup Services", "Technical Support"]
     }
   ];
 
@@ -66,14 +66,13 @@ export default function Services() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6">
-            Stop Losing Money to <span className="gradient-text">Bad Websites</span>
+            Our <span className="gradient-text">Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Every day your website doesn't convert is money down the drain. 
-            Here's how we fix that and turn your website into a profit machine.
+            Professional web development solutions designed to help your business succeed online.
           </p>
-          <div className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-3 rounded-full font-bold text-lg">
-            🎯 Guaranteed Results or Money Back
+          <div className="inline-flex items-center bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-bold text-lg">
+            Quality Results & Professional Support
           </div>
         </div>
         
@@ -124,7 +123,7 @@ export default function Services() {
                       : 'bg-gray-900 text-white hover:bg-gray-800'
                   }`}
                 >
-                  Get Started Now
+                  Learn More
                 </button>
               </CardContent>
             </Card>

@@ -98,13 +98,13 @@ export default function Portfolio() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6">
-            Real Results, Real <span className="gradient-text">Revenue</span>
+            Our <span className="gradient-text">Portfolio</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            These aren't just pretty websites. They're profit-generating machines that transformed our clients' businesses.
+            Explore our recent projects showcasing professional web solutions for various industries.
           </p>
-          <div className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-3 rounded-full font-bold text-lg">
-            📈 $15M+ in client revenue generated
+          <div className="inline-flex items-center bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-bold text-lg">
+            Quality Projects & Satisfied Clients
           </div>
         </div>
         
@@ -127,79 +127,57 @@ export default function Portfolio() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <Card key={project.id} className="card-hover border-2 border-gray-200 shadow-xl overflow-hidden relative group">
-              {/* Success Badge */}
-              <div className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold z-10">
-                🚀 SUCCESS STORY
-              </div>
-              
-              <div className="relative overflow-hidden">
+            <Card key={project.id} className="card-hover border border-gray-200 shadow-lg overflow-hidden">
+              <div className="relative">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-48 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               </div>
               
               <CardContent className="p-6">
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-bold text-gray-900">{project.title}</h3>
-                  <div className="text-right">
-                    <div className="text-sm font-bold text-green-600">{project.results}</div>
-                    <div className="text-xs text-gray-500">{project.timeline}</div>
-                  </div>
-                </div>
-                
-                <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
-                
-                <div className="bg-gradient-to-r from-green-50 to-blue-50 p-4 rounded-lg mb-4">
-                  <div className="text-center">
-                    <div className="text-lg font-black gradient-text">{project.revenue}</div>
-                    <div className="text-xs text-gray-600">Client Revenue Generated</div>
-                  </div>
-                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
+                <p className="text-gray-600 mb-4">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, index) => (
                     <Badge 
                       key={index} 
                       variant="secondary" 
-                      className="text-xs bg-blue-100 text-blue-800 font-medium"
+                      className="text-xs bg-blue-100 text-blue-800"
                     >
                       {tech}
                     </Badge>
                   ))}
                 </div>
                 
-                <button 
-                  onClick={scrollToContact}
-                  className="w-full bg-gray-900 text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition-all transform hover:scale-105"
-                >
-                  Get Similar Results
-                </button>
+                <div className="flex justify-between items-center">
+                  <span className="text-blue-600 hover:text-teal-600 font-medium cursor-pointer">
+                    View Details
+                  </span>
+                  <div className="flex space-x-2">
+                    <button className="text-gray-400 hover:text-blue-600 transition-colors">
+                      <ExternalLink className="h-4 w-4" />
+                    </button>
+                    <button className="text-gray-400 hover:text-blue-600 transition-colors">
+                      <Github className="h-4 w-4" />
+                    </button>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
         
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-[hsl(219,82%,61%)] to-[hsl(173,85%,40%)] p-1 rounded-2xl max-w-3xl mx-auto">
-            <div className="bg-white rounded-2xl p-8">
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">Ready to Join These Success Stories?</h3>
-              <p className="text-xl text-gray-600 mb-6">
-                Your competitors are already winning online. Don't let them take your customers.
-              </p>
-              <button 
-                onClick={scrollToContact}
-                className="gradient-bg text-white px-12 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition-all transform hover:scale-105 magnetic-hover"
-              >
-                🔥 Start My Success Story
-                <ArrowRight className="ml-3 h-5 w-5" />
-              </button>
-              <p className="text-sm text-gray-500 mt-4">Free consultation • Guaranteed results • 24h response</p>
-            </div>
-          </div>
+        <div className="text-center mt-12">
+          <button 
+            onClick={scrollToContact}
+            className="gradient-bg text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all transform hover:scale-105"
+          >
+            Start Your Project
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </button>
         </div>
       </div>
     </section>

@@ -7,9 +7,10 @@ This is a conversion-focused freelance web development agency website built with
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
-Design approach: Unique, compelling design that convinces visitors to contact for projects
+Design approach: Modern, professional design that's balanced - not too aggressive but effective for lead generation
 Logo: Use transparent background version of Sharp Sol logo
-Focus: Conversion-oriented rather than traditional portfolio approach
+Focus: Middle-ground approach - professional and conversion-focused without being pushy
+Content tone: Moderate professional tone that generates leads without high-pressure tactics
 
 ## System Architecture
 

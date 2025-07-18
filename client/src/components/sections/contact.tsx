@@ -55,17 +55,11 @@ export default function Contact() {
   };
 
   const benefits = [
-    "🚀 Free consultation & project roadmap",
-    "⚡ 24-hour response guarantee", 
-    "💰 Transparent pricing, no hidden fees",
-    "🎯 Results-driven approach",
-    "🔒 100% confidential & secure"
-  ];
-
-  const urgencyFactors = [
-    "⏰ Limited spots available this month",
-    "🔥 Early bird pricing ends soon",
-    "💎 Premium support included"
+    "Free consultation & project planning",
+    "24-hour response time", 
+    "Transparent pricing, no hidden fees",
+    "Professional development approach",
+    "Confidential & secure process"
   ];
 
   return (
@@ -77,19 +71,25 @@ export default function Contact() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-6">
-            Ready to <span className="gradient-text">10x Your Business</span>?
+            Let's <span className="gradient-text">Work Together</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Stop losing customers to competitors. Let's build you a website that actually converts visitors into paying customers.
+            Ready to start your project? Get in touch and let's discuss how we can help your business succeed online.
           </p>
           
-          {/* Urgency Factors */}
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {urgencyFactors.map((factor, index) => (
-              <div key={index} className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse">
-                {factor}
-              </div>
-            ))}
+          <div className="flex flex-wrap justify-center gap-6 text-center max-w-4xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+              <div className="text-2xl font-bold text-blue-400">24 Hours</div>
+              <div className="text-gray-300">Response Time</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+              <div className="text-2xl font-bold text-green-400">Free Consultation</div>
+              <div className="text-gray-300">No Commitment</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+              <div className="text-2xl font-bold text-teal-400">Professional Support</div>
+              <div className="text-gray-300">Throughout Project</div>
+            </div>
           </div>
         </div>
 
@@ -98,11 +98,12 @@ export default function Contact() {
           <div className="space-y-8">
             <div className="bg-gradient-to-r from-[hsl(219,82%,61%)] to-[hsl(173,85%,40%)] p-1 rounded-2xl">
               <div className="bg-black rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-white mb-6">🎯 What You Get When You Contact Us:</h3>
+                <h3 className="text-2xl font-bold text-white mb-6">What You Get When You Contact Us:</h3>
                 <ul className="space-y-4">
                   {benefits.map((benefit, index) => (
                     <li key={index} className="text-gray-300 flex items-center text-lg">
-                      <span className="mr-3">{benefit}</span>
+                      <span className="w-2 h-2 bg-blue-400 rounded-full mr-4"></span>
+                      <span>{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -110,19 +111,19 @@ export default function Contact() {
             </div>
 
             <div className="glass-effect p-8 rounded-2xl border border-white/10">
-              <h4 className="text-xl font-bold text-white mb-4">💬 What Our Clients Say:</h4>
+              <h4 className="text-xl font-bold text-white mb-4">What Our Clients Say:</h4>
               <blockquote className="text-gray-300 italic mb-4">
-                "Sharp Sol increased our online sales by 400% in just 3 months. 
-                Best investment we ever made!"
+                "Sharp Sol delivered a professional website that perfectly represents our business. 
+                Great communication and quality work!"
               </blockquote>
-              <div className="text-sm text-gray-400">- Sarah Johnson, E-commerce Store Owner</div>
+              <div className="text-sm text-gray-400">- Sarah Johnson, Business Owner</div>
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-full font-bold text-lg mb-4">
-                💰 Average ROI: 300% in 6 months
+              <div className="inline-flex items-center bg-blue-500 text-white px-6 py-3 rounded-full font-bold text-lg mb-4">
+                Trusted by 100+ Clients
               </div>
-              <p className="text-gray-400 text-sm">*Based on 100+ successful projects</p>
+              <p className="text-gray-400 text-sm">Professional web development since 2019</p>
             </div>
           </div>
           
@@ -131,8 +132,8 @@ export default function Contact() {
             <Card className="bg-white">
               <CardContent className="p-8">
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">🚀 Get Your Free Consultation</h3>
-                  <p className="text-gray-600">Fill out this form and get a detailed project proposal within 24 hours</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Get Your Free Consultation</h3>
+                  <p className="text-gray-600">Fill out this form and we'll get back to you within 24 hours</p>
                 </div>
                 
                 <Form {...form}>

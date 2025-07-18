@@ -69,20 +69,20 @@ export default function Hero() {
               <span className="typewriter">{heroTexts[currentText]}</span>
             </div>
             <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed font-medium">
-              🚀 Ready to dominate your market? We build <span className="gradient-text font-bold">high-converting websites</span> that turn visitors into customers in just 5 seconds.
+              We create <span className="gradient-text font-bold">professional websites</span> that help your business grow and succeed online.
             </p>
           </div>
 
-          {/* Compelling CTA Section */}
+          {/* Value Proposition */}
           <div className="mb-16 animate-fadeInUp" style={{animationDelay: '0.6s'}}>
             <div className="bg-gradient-to-r from-[hsl(219,82%,61%)] to-[hsl(173,85%,40%)] p-1 rounded-2xl mb-8 max-w-2xl mx-auto">
               <div className="bg-black rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-white mb-4">🎯 What If Your Website Could...</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">What We Deliver</h3>
                 <ul className="text-left text-gray-300 space-y-2 max-w-md mx-auto">
-                  <li>✅ Convert 3x more visitors into customers</li>
-                  <li>✅ Load in under 2 seconds (Google loves this)</li>
-                  <li>✅ Work perfectly on any device</li>
-                  <li>✅ Rank #1 on Google searches</li>
+                  <li>✓ Mobile-responsive design</li>
+                  <li>✓ Fast loading performance</li>
+                  <li>✓ SEO optimization</li>
+                  <li>✓ Professional support</li>
                 </ul>
               </div>
             </div>
@@ -90,19 +90,19 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center max-w-2xl mx-auto">
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="gradient-bg text-white px-12 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition-all transform hover:scale-105 magnetic-hover w-full sm:w-auto text-shadow pulse-slow"
+                className="gradient-bg text-white px-12 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition-all transform hover:scale-105 magnetic-hover w-full sm:w-auto text-shadow"
               >
-                🔥 Get My Website Now
+                Start Your Project
               </button>
               <button 
                 onClick={() => scrollToSection('portfolio')}
                 className="glass-effect text-white border-2 border-white/30 px-12 py-5 rounded-full font-bold text-xl hover:bg-white/20 transition-all w-full sm:w-auto magnetic-hover"
               >
-                See Success Stories
+                View Our Work
               </button>
             </div>
             
-            <p className="text-yellow-400 font-bold mt-4 animate-pulse">⚡ Free consultation • 24h response guaranteed</p>
+            <p className="text-gray-400 font-medium mt-4">Free consultation available</p>
           </div>
 
           {/* Achievement Stats */}
