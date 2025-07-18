@@ -1,5 +1,5 @@
 import { Heart } from "lucide-react";
-import sharpSolLogo from "@assets/SharpSol_logo_1752821833915.png";
+import { Box } from "lucide-react";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <img src={sharpSolLogo} alt="Sharp Sol Logo" className="h-8 w-8" />
+              <Box className="h-8 w-8 text-blue-400" />
               <span className="text-xl font-bold">SHARP SOL</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">

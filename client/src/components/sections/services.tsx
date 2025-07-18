@@ -68,11 +68,40 @@ export default function Services() {
           <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6">
             Our <span className="gradient-text">Services</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
             Professional web development solutions designed to help your business succeed online.
           </p>
-          <div className="inline-flex items-center bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-bold text-lg">
-            Quality Results & Professional Support
+          
+          {/* What We Deliver */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
+            <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span className="text-blue-600 font-bold">📱</span>
+              </div>
+              <h4 className="font-bold text-gray-900 mb-2">Mobile-Responsive</h4>
+              <p className="text-sm text-gray-600">Perfect on all devices</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span className="text-green-600 font-bold">⚡</span>
+              </div>
+              <h4 className="font-bold text-gray-900 mb-2">Fast Loading</h4>
+              <p className="text-sm text-gray-600">Optimized performance</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span className="text-purple-600 font-bold">🔍</span>
+              </div>
+              <h4 className="font-bold text-gray-900 mb-2">SEO Optimized</h4>
+              <p className="text-sm text-gray-600">Search engine ready</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span className="text-teal-600 font-bold">🛠️</span>
+              </div>
+              <h4 className="font-bold text-gray-900 mb-2">Professional Support</h4>
+              <p className="text-sm text-gray-600">Ongoing assistance</p>
+            </div>
           </div>
         </div>
         

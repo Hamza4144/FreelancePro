@@ -1,5 +1,4 @@
-import { ArrowRight, Code2, Zap, Trophy, Users } from "lucide-react";
-import sharpSolLogo from "@assets/SharpSol_logo_1752821833915.png";
+import { ArrowRight, Code2, Zap, Trophy, Users, Box } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function Hero() {
@@ -46,19 +45,22 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Floating Logo Elements */}
+      {/* Floating Cube Elements */}
       <div className="absolute top-32 left-16 opacity-10 animate-float">
-        <img src={sharpSolLogo} alt="" className="h-16 w-16" />
+        <Box className="h-16 w-16 text-blue-400" />
       </div>
       <div className="absolute bottom-32 right-16 opacity-10 animate-float" style={{animationDelay: '-2s'}}>
-        <img src={sharpSolLogo} alt="" className="h-20 w-20" />
+        <Box className="h-20 w-20 text-teal-400" />
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Main Logo and Title */}
           <div className="mb-12 animate-scaleIn">
-            <img src={sharpSolLogo} alt="Sharp Sol Logo" className="h-32 w-32 mx-auto mb-6 drop-shadow-2xl" />
+            <div className="relative mx-auto mb-6 w-32 h-32 flex items-center justify-center">
+              <Box className="h-24 w-24 text-blue-400 drop-shadow-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-teal-400/20 rounded-lg animate-pulse"></div>
+            </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black gradient-text mb-4 text-shadow">SHARP SOL</h1>
             <p className="text-xl sm:text-2xl text-gray-300 font-bold mb-8 tracking-[0.2em] uppercase">LET'S PLAY WITH THE CODE</p>
           </div>
@@ -73,20 +75,8 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Value Proposition */}
+          {/* Call to Action */}
           <div className="mb-16 animate-fadeInUp" style={{animationDelay: '0.6s'}}>
-            <div className="bg-gradient-to-r from-[hsl(219,82%,61%)] to-[hsl(173,85%,40%)] p-1 rounded-2xl mb-8 max-w-2xl mx-auto">
-              <div className="bg-black rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-white mb-4">What We Deliver</h3>
-                <ul className="text-left text-gray-300 space-y-2 max-w-md mx-auto">
-                  <li>✓ Mobile-responsive design</li>
-                  <li>✓ Fast loading performance</li>
-                  <li>✓ SEO optimization</li>
-                  <li>✓ Professional support</li>
-                </ul>
-              </div>
-            </div>
-            
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center max-w-2xl mx-auto">
               <button 
                 onClick={() => scrollToSection('contact')}
@@ -102,11 +92,11 @@ export default function Hero() {
               </button>
             </div>
             
-            <p className="text-gray-400 font-medium mt-4">Free consultation available</p>
+            <p className="text-gray-400 font-medium mt-6">Free consultation available</p>
           </div>
 
           {/* Achievement Stats */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 animate-slideInLeft" style={{animationDelay: '0.9s'}}>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20 animate-slideInLeft" style={{animationDelay: '0.9s'}}>
             {achievements.map((achievement, index) => (
               <div key={index} className="glass-effect p-6 rounded-2xl text-center magnetic-hover">
                 <achievement.icon className="h-8 w-8 text-[hsl(173,85%,40%)] mx-auto mb-3" />
