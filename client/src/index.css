@@ -4,7 +4,7 @@
 
 :root {
   --background: hsl(0, 0%, 100%);
-  --foreground: hsl(20, 14.3%, 4.1%);
+  --foreground: hsl(240, 10%, 3.9%);
   --muted: hsl(60, 4.8%, 95.9%);
   --muted-foreground: hsl(25, 5.3%, 44.7%);
   --popover: hsl(0, 0%, 100%);
@@ -22,12 +22,14 @@
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
   --ring: hsl(20, 14.3%, 4.1%);
-  --radius: 0.5rem;
+  --radius: 0.75rem;
   
   /* Sharp Sol brand colors */
   --sharp-blue: hsl(219, 82%, 61%);
   --sharp-teal: hsl(173, 85%, 40%);
   --sharp-emerald: hsl(158, 84%, 39%);
+  --sharp-purple: hsl(271, 81%, 56%);
+  --sharp-orange: hsl(25, 95%, 53%);
 }
 
 .dark {
@@ -65,19 +67,23 @@
 
 @layer utilities {
   .gradient-text {
-    background: linear-gradient(135deg, var(--sharp-blue), var(--sharp-teal));
+    background: linear-gradient(135deg, var(--sharp-blue), var(--sharp-teal), var(--sharp-purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
+  .gradient-bg {
+    background: linear-gradient(135deg, var(--sharp-blue), var(--sharp-teal), var(--sharp-purple));
+  }
+  
   .card-hover {
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   
   .card-hover:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
   }
   
   .tech-icon {
@@ -85,8 +91,31 @@
   }
   
   .tech-icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.15) rotate(5deg);
     color: var(--sharp-blue);
+  }
+  
+  .magnetic-hover {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .magnetic-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 }
 
@@ -102,14 +131,87 @@
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blinkCursor {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--sharp-blue); }
 }
 
 .animate-fadeInUp {
-  animation: fadeInUp 0.6s ease-out;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-slideInLeft {
+  animation: slideInFromLeft 0.8s ease-out;
+}
+
+.animate-slideInRight {
+  animation: slideInFromRight 0.8s ease-out;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.6s ease-out;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid var(--sharp-blue);
+  white-space: nowrap;
+  animation: typewriter 3s steps(30, end), blinkCursor 0.5s step-end infinite;
 }

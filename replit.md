@@ -2,11 +2,14 @@
 
 ## Overview
 
-This is a professional web development agency portfolio website built with a modern full-stack architecture. The application showcases SHARP SOL's services, portfolio, and provides a contact form for potential clients. It uses a clean, responsive design with a focus on user experience and modern web technologies.
+This is a conversion-focused freelance web development agency website built with modern full-stack architecture. The application is designed to immediately convince visitors to contact Sharp Sol for projects through compelling design, results-driven messaging, and conversion psychology. Features a dark, modern aesthetic with the Sharp Sol transparent logo and focuses on showcasing real business results rather than just technical features.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design approach: Unique, compelling design that convinces visitors to contact for projects
+Logo: Use transparent background version of Sharp Sol logo
+Focus: Conversion-oriented rather than traditional portfolio approach
 
 ## System Architecture
 
