@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Box } from "lucide-react";
+import logo from "../../../attached_assets/sharp-favicon1.png"
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,11 +18,20 @@ export default function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
-            <div className="relative">
+            {/* <div className="relative">
               <Box className="h-8 w-8 text-blue-400" />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-teal-400 opacity-20 rounded-sm"></div>
-            </div>
-            <span className="text-xl font-black gradient-text">SHARP SOL</span>
+            </div> */}
+            <div className="relative" style={{ width: '4rem', width: '4rem' }}>
+              <img
+                src={logo}
+                alt="Sharp Sol Logo"
+                className="h-full w-full object-contain relative z-10"
+              />
+              {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-teal-400 opacity-20 rounded-sm z-0"></div> */}
+          </div>
+
+            <span className="text-xl font-black gradient-text" style={{ marginLeft: '0'}}>SHARP SOL</span>
           </div>
           
           {/* Desktop Menu */}

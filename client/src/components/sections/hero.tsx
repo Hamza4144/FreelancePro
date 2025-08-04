@@ -1,5 +1,6 @@
 import { ArrowRight, Code2, Zap, Trophy, Users, Box } from "lucide-react";
 import { useState, useEffect } from "react";
+import favicon from "../../../../attached_assets/sharp-favicon1.png"
 
 export default function Hero() {
   const [currentText, setCurrentText] = useState(0);
@@ -47,19 +48,34 @@ export default function Hero() {
 
       {/* Floating Cube Elements */}
       <div className="absolute top-32 left-16 opacity-10 animate-float">
-        <Box className="h-16 w-16 text-blue-400" />
+        {/* <Box className="h-16 w-16 text-blue-400" /> */}
+        <img
+                src={favicon}
+                alt="Sharp Sol Logo Favicon"
+                className="h-16 w-16 text-blue-400"
+              />
       </div>
       <div className="absolute bottom-32 right-16 opacity-10 animate-float" style={{animationDelay: '-2s'}}>
-        <Box className="h-20 w-20 text-teal-400" />
+        {/* <Box className="h-20 w-20 text-teal-400" /> */}
+        <img
+                src={favicon}
+                alt="Sharp Sol Logo Favicon"
+                className="h-16 w-16 text-blue-400"
+              />
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Main Logo and Title */}
           <div className="mb-12 animate-scaleIn">
-            <div className="relative mx-auto mb-6 w-32 h-32 flex items-center justify-center">
-              <Box className="h-24 w-24 text-blue-400 drop-shadow-2xl" />
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-teal-400/20 rounded-lg animate-pulse"></div>
+            <div className="relative mx-auto mt-24 mb-6 w-40 h-40 flex items-center justify-center">
+              {/* <Box className="h-24 w-24 text-blue-400 drop-shadow-2xl" /> */}
+              <img
+                src={favicon}
+                alt="Sharp Sol Logo Favicon"
+                className="h-50 w-50 text-blue-400 drop-shadow-2xl"
+              />
+              {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-teal-400/20 rounded-lg animate-pulse"></div> */}
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black gradient-text mb-4 text-shadow">SHARP SOL</h1>
             <p className="text-xl sm:text-2xl text-gray-300 font-bold mb-8 tracking-[0.2em] uppercase">LET'S PLAY WITH THE CODE</p>
