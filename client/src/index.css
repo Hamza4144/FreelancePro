@@ -13,7 +13,8 @@
   --card-foreground: hsl(20, 14.3%, 4.1%);
   --border: hsl(20, 5.9%, 90%);
   --input: hsl(20, 5.9%, 90%);
-  --primary: hsl(219, 82%, 61%);
+  /* --primary: hsl(219, 82%, 61%); */
+  --primary: hsl(190, 36%, 52%);
   --primary-foreground: hsl(210, 40%, 98%);
   --secondary: hsl(60, 4.8%, 95.9%);
   --secondary-foreground: hsl(24, 9.8%, 10%);
@@ -26,7 +27,8 @@
   
   /* Sharp Sol brand colors */
   --sharp-blue: hsl(219, 82%, 61%);
-  --sharp-teal: hsl(173, 85%, 40%);
+  /* --sharp-teal: hsl(173, 85%, 40%); */
+  --sharp-teal: hsl(190, 50%, 52%);
   --sharp-emerald: hsl(158, 84%, 39%);
   --sharp-purple: hsl(271, 81%, 56%);
   --sharp-orange: hsl(25, 95%, 53%);

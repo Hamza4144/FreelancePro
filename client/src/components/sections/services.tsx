@@ -15,7 +15,8 @@ export default function Services() {
       title: "Custom Websites",
       description: "Professional websites built with modern technologies and best practices.",
       result: "Professional Results",
-      price: "Starting at $2,500",
+      // price: "Starting at $2,500",
+      price: "",
       features: ["Mobile-Responsive", "Fast Loading", "SEO Optimized", "User-Friendly"],
       popular: true
     },
@@ -24,7 +25,8 @@ export default function Services() {
       title: "WordPress Development",
       description: "Custom WordPress solutions for businesses of all sizes.",
       result: "Easy Management",
-      price: "Starting at $1,800",
+      // price: "Starting at $1,800",
+      price: "",
       features: ["Custom Themes", "Plugin Development", "Content Management", "SEO Ready"]
     },
     {
@@ -32,7 +34,8 @@ export default function Services() {
       title: "Web Applications",
       description: "Custom web applications to streamline your business processes.",
       result: "Business Efficiency",
-      price: "Starting at $4,500",
+      // price: "Starting at $4,500",
+      price: "",
       features: ["React.js & Laravel", "Database Integration", "API Development", "Scalable Design"]
     },
     {
@@ -40,7 +43,8 @@ export default function Services() {
       title: "E-commerce Solutions",
       description: "Online stores with secure payment processing and inventory management.",
       result: "Online Sales",
-      price: "Starting at $3,500",
+      // price: "Starting at $3,500",
+      price: "",
       features: ["Payment Integration", "Product Management", "Order Processing", "Mobile Commerce"]
     },
     {
@@ -48,7 +52,8 @@ export default function Services() {
       title: "API Integration",
       description: "Connect your website with third-party services and platforms.",
       result: "Seamless Integration",
-      price: "Starting at $1,200",
+      // price: "Starting at $1,200",
+      price: "",
       features: ["Google Services", "Payment APIs", "Social Media", "Custom Solutions"]
     },
     {
@@ -56,7 +61,8 @@ export default function Services() {
       title: "Maintenance & Support",
       description: "Ongoing website maintenance and technical support services.",
       result: "Peace of Mind",
-      price: "From $250/month",
+      // price: "From $250/month",
+      price: "",
       features: ["Regular Updates", "Security Monitoring", "Backup Services", "Technical Support"]
     }
   ];

@@ -176,7 +176,7 @@ export default function Portfolio() {
             className="gradient-bg text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             Start Your Project
-            <ArrowRight className="ml-2 h-4 w-4" />
+            <ArrowRight className="ml-2 h-4 w-4" style={{ display: "inline" }} />
           </button>
         </div>
       </div>

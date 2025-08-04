@@ -196,12 +196,12 @@ export default function Contact() {
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
-                              <SelectItem value="high-converting-website">🚀 High-Converting Website ($2,999+)</SelectItem>
-                              <SelectItem value="wordpress">📱 WordPress Website ($1,999+)</SelectItem>
-                              <SelectItem value="web-app">⚡ Custom Web Application ($4,999+)</SelectItem>
-                              <SelectItem value="ecommerce">🛒 E-commerce Store ($3,999+)</SelectItem>
-                              <SelectItem value="api">🔗 API Integration ($1,499+)</SelectItem>
-                              <SelectItem value="maintenance">🛠️ Website Maintenance ($299/mo)</SelectItem>
+                              <SelectItem value="high-converting-website">🚀 High-Converting Website</SelectItem>
+                              <SelectItem value="wordpress">📱 WordPress Website</SelectItem>
+                              <SelectItem value="web-app">⚡ Custom Web Application</SelectItem>
+                              <SelectItem value="ecommerce">🛒 E-commerce Store</SelectItem>
+                              <SelectItem value="api">🔗 API Integration</SelectItem>
+                              <SelectItem value="maintenance">🛠️ Website Maintenance</SelectItem>
                               <SelectItem value="other">💬 Other (Let's discuss)</SelectItem>
                             </SelectContent>
                           </Select>
@@ -215,10 +215,10 @@ export default function Contact() {
                       name="budget"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-sm font-bold text-gray-900">
+                          {/* <FormLabel className="text-sm font-bold text-gray-900">
                             Investment Budget 💰
-                          </FormLabel>
-                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                          </FormLabel> */}
+                          {/* <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger className="border-2 border-gray-200 focus:ring-2 focus:ring-[hsl(219,82%,61%)] focus:border-[hsl(219,82%,61%)] h-12 text-lg">
                                 <SelectValue placeholder="Select your budget range" />
@@ -231,7 +231,7 @@ export default function Contact() {
                               <SelectItem value="10k-25k">🚀 $10,000 - $25,000 (Enterprise)</SelectItem>
                               <SelectItem value="25k-plus">👑 $25,000+ (Custom Solution)</SelectItem>
                             </SelectContent>
-                          </Select>
+                          </Select> */}
                           <FormMessage />
                         </FormItem>
                       )}
@@ -274,7 +274,7 @@ export default function Contact() {
                     </Button>
                     
                     <div className="text-center space-y-2">
-                      <p className="text-sm text-green-600 font-bold">✅ Free consultation worth $297</p>
+                      <p className="text-sm text-green-600 font-bold">✅ Free consultation</p>
                       <p className="text-xs text-gray-500">
                         🔒 Your information is 100% secure and confidential. No spam, guaranteed.
                       </p>

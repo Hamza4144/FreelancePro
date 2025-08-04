@@ -1,5 +1,6 @@
 import { Heart } from "lucide-react";
 import { Box } from "lucide-react";
+import favicon from "../../../attached_assets/sharp-favicon1.png"
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -38,8 +39,17 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <Box className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">SHARP SOL</span>
+              {/* <Box className="h-8 w-8 text-blue-400" /> */}
+              <img
+                src={favicon}
+                alt="Sharp Sol Logo Favicon"
+                className="h20 w-20 text-blue-400"
+              />
+              <div style={{ marginLeft: '0' }}>
+                <p className="text-xl font-bold">SHARP SOL</p>
+                <span className="text-sm tracking-[0.2em]" style={{ fontSize: '10px' }}>LET'S PLAY WITH THE CODE</span>
+              </div>
+              {/* <span className="text-xl font-bold" >SHARP SOL</span> */}
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
               Professional web development agency with 5 years of experience creating 
@@ -101,7 +111,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2024 Sharp Sol. All rights reserved.
+            © 2025 Sharp Sol. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm flex items-center">
             Made with <Heart className="h-4 w-4 text-red-500 mx-1" /> by Sharp Sol Team
